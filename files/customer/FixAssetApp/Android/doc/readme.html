@@ -1,0 +1,294 @@
+<!DOCTYPE html><html><head><title>固定资产软件使用说明</title><meta charset='utf-8'><link href='https://cdn.maxiang.io/res-min/themes/marxico.css' rel='stylesheet'><style></style></head><body><div id='preview-contents' class='note-content'>
+                        
+                    
+
+
+
+<h1 id="固定资产软件使用说明">固定资产软件使用说明</h1>
+
+<p> [ 2019-12-01 | Ver 1.2.0 ]</p>
+
+<hr>
+
+<div><div class="toc"><div class="toc">
+<ul>
+<li><a href="#固定资产软件使用说明">固定资产软件使用说明</a><ul>
+<li><a href="#使用前说明">使用前说明</a></li>
+<li><a href="#登录">登录</a></li>
+<li><a href="#软件设置">软件设置</a><ul>
+<li><a href="#资产api地址">资产API地址</a></li>
+<li><a href="#扫描头类型">扫描头类型</a></li>
+<li><a href="#扫描键设置">扫描键设置</a></li>
+<li><a href="#在线离线设置">在线/离线设置</a></li>
+</ul>
+</li>
+<li><a href="#主功能页面">主功能页面</a></li>
+<li><a href="#数据下载">数据下载</a></li>
+<li><a href="#资产列表">资产列表</a><ul>
+<li><a href="#资产明细">资产明细</a></li>
+<li><a href="#图片上传">图片上传</a></li>
+</ul>
+</li>
+<li><a href="#盘点计划">盘点计划</a><ul>
+<li><a href="#盘点计划明细从盘点计划进入">盘点计划明细（从“盘点计划”进入）</a></li>
+<li><a href="#盘点扫描界面2d扫描头">盘点扫描界面（2D扫描头）</a><ul>
+<li><ul>
+<li><a href="#盘点操作步骤">盘点操作步骤</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#盘点扫描界面rfid发射器需设备支持">盘点扫描界面（RFID发射器，需设备支持）</a><ul>
+<li><ul>
+<li><a href="#盘点操作步骤-1">盘点操作步骤</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#盘点上传">盘点上传</a><ul>
+<li><a href="#盘点计划明细页面从盘点上传进入">盘点计划明细页面（从“盘点上传”进入）</a></li>
+</ul>
+</li>
+<li><a href="#使用说明">使用说明</a></li>
+<li><a href="#关于软件">关于软件</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+<h2 id="使用前说明">使用前说明</h2>
+
+<p>请到Android系统 设置&gt; 应用&gt; “固定资产”App&gt; 权限，开启页面中所有访问权限。</p>
+
+
+
+<h2 id="登录">登录</h2>
+
+<p>属于用户名和密码，点击【登录】，进入App主屏幕。</p>
+
+<pre class="prettyprint hljs-dark"><code class="hljs markdown"><div class="hljs-line"><span class="hljs-quote">&gt; 注意：如果第一次使用，请先点击下方的【软件设置】</span>
+</div></code></pre>
+
+
+
+<h2 id="软件设置">软件设置</h2>
+
+<p>设置资产API地址、扫描枪参数等设置</p>
+
+
+
+<h3 id="资产api地址">资产API地址</h3>
+
+<p>输入格式：例如,<a href="http://192.168.1.123:10009" target="_blank">http://192.168.1.123:10009</a></p>
+
+<pre class="prettyprint hljs-dark"><code class="hljs markdown"><div class="hljs-line"><span class="hljs-quote">&gt; 注意：最后不带斜杠</span>
+</div></code></pre>
+
+
+
+<h3 id="扫描头类型">扫描头类型</h3>
+
+<p>设置扫描头类型。目前仅支持两种：</p>
+
+<ul><li><p>2D扫描头（需扫描枪带有设置App）</p></li>
+<li><p>Zebra® RFID（EMDK套件+TC系列设备）</p></li>
+</ul>
+
+
+
+<h3 id="扫描键设置">扫描键设置</h3>
+
+<p>当使用“2D扫描头”时候，此处设置会生效。</p>
+
+<pre class="prettyprint hljs-dark"><code class="hljs markdown"><div class="hljs-line"><span class="hljs-quote">&gt; 长触输入框，进入扫描键设置窗口。</span>
+</div></code></pre>
+
+
+
+<h3 id="在线离线设置">在线/离线设置</h3>
+
+<p>此功能作废。</p>
+
+
+
+<h2 id="主功能页面">主功能页面</h2>
+
+<p>登录之后，显示软件主功能页面。此处列出“固定资产”主功能列表。</p>
+
+<p>常用功能概览：</p>
+
+<table><tbody><tr style="font-weight:bold">  <td align="center">功能名称</td>  <td align="center">描述</td></tr><tr>  <td align="center">数据下载</td>  <td align="center">从资产服务器上下载数据到本地</td></tr><tr>  <td align="center">资产列表</td>  <td align="center">查看、搜索、定位资产卡片</td></tr><tr>  <td align="center">资产明细</td>  <td align="center">查看资产卡片信息以及上传图片类型附件</td></tr><tr>  <td align="center">盘点计划</td>  <td align="center">盘点计划列表页面，后续进入可盘点</td></tr><tr>  <td align="center">盘点上传</td>  <td align="center">如果存在计划未能成功上传，这里重新上传</td></tr><tr>  <td align="center">使用说明</td>  <td align="center">此软件的使用手册</td></tr><tr>  <td align="center">关于软件</td>  <td align="center">关于此软件的版本信息、数据库版本等信息</td></tr><tr>  <td align="center">软件设置</td>  <td align="center">配置API地址、扫描头、扫描键等内容</td></tr><tr>  <td align="center">图片上传</td>  <td align="center">上传图片附件（该功能不直接在主屏幕显示）</td></tr></tbody></table>
+
+
+
+<h2 id="数据下载">数据下载</h2>
+
+<p>该功能为离线数据下载。目前可下载如下内容：</p>
+
+<ul><li><p>资产卡片信息  </p></li>
+<li><p>用户信息</p></li>
+<li><p>部门信息</p>
+
+<blockquote>
+  <p>Tips: 联络网络后，点击按钮即可下载。</p>
+</blockquote></li>
+</ul>
+
+
+
+<h2 id="资产列表">资产列表</h2>
+
+<p>下载到的资产卡片数据。（离线模式） <br>
+该界面可以搜索，定位，资产卡片。</p>
+
+<blockquote>
+  <p>Tips: 由于数据量太大，因此采用分页方式，请使用底部的分页组件。</p>
+</blockquote>
+
+<p>点击其中一条“资产卡片”信息。进入《资产卡片》明细页面。</p>
+
+
+
+<h3 id="资产明细">资产明细</h3>
+
+<p>查看卡片详细登记的信息。该页面有如下功能：</p>
+
+<ul><li><p>查看卡片信息</p></li>
+<li><p>未上传的图片附件，进行拍照上传</p></li>
+<li><p>查看已上传的图片附件</p></li>
+<li><p>新增/修改资产卡片*</p></li>
+</ul>
+
+<p><strong>注意：</strong> <br>
+<br> <br>
+<strong>* 这里的新增、修改资产卡片根据用户的需要，进行删减，程序将来未来版本中加入启用和关闭的设置。</strong> </p>
+
+
+
+<h3 id="图片上传">图片上传</h3>
+
+<p>如果需要拍摄资产的照片加以区分，这里提提供了入口。</p>
+
+<p><strong>注意：</strong></p>
+
+<ol><li rel="1"><p>由于机能有限，最大上传5张图片。</p></li>
+<li rel="2"><p>每张图片最大5Mb（1Mb = 1024Kb）。</p></li>
+<li rel="3"><p>APP临时拍摄的图片长期保存在【内部存储】\DCIM\Pictures 文件夹下。</p></li>
+<li rel="4"><p>上传的时候请保持网络通畅，且服务器同时没有非常大的负载压力。</p></li>
+</ol>
+
+
+
+<h2 id="盘点计划">盘点计划</h2>
+
+<p>该功能查看您所有的盘点计划，该页面有如下功能：</p>
+
+<ul><li><p>下载数据：从服务器上下载最新的计划数据。</p></li>
+<li><p>搜索：如果页面数据量太大，可以搜索，快速定位。</p></li>
+</ul>
+
+<p>选择一行“未完成”状态盘点计划主记录数据，进入《盘点计划》明细页面。</p>
+
+<pre class="prettyprint hljs-dark"><code class="hljs markdown"><div class="hljs-line"><span class="hljs-quote">&gt; Tips: 从列表下拉可以刷新数据！</span>
+</div></code></pre>
+
+
+
+<h3 id="盘点计划明细从盘点计划进入">盘点计划明细（从“盘点计划”进入）</h3>
+
+<p>该页面含有如下菜单功能：</p>
+
+<ul><li><p>盘点：未完成计划，点击右上角菜单&gt; “盘点”</p></li>
+<li><p>获取更新：获取服务器上最新版本的该计划明细数据。</p>
+
+<blockquote>
+  <p>提示：盘点页面的加载根据本app设置的“扫描头类型”决定。</p>
+</blockquote></li>
+</ul>
+
+
+
+<h3 id="盘点扫描界面2d扫描头">盘点扫描界面（2D扫描头）</h3>
+
+<p>进入界面后，点击输入框，即可开始扫码工作。</p>
+
+<pre class="prettyprint hljs-dark"><code class="hljs lsl"><div class="hljs-line">&gt; Tips：<span class="hljs-number">1.</span> 扫描前请在本App设置好对应的扫描键。<span class="hljs-number">2.</span> 扫描的条码最后必须带回车符（KeyCode = <span class="hljs-number">13</span>）。
+</div></code></pre>
+
+
+
+<h5 id="盘点操作步骤">盘点操作步骤</h5>
+
+<ol><li rel="1"><p>点击输入框，开始扫码。</p></li>
+<li rel="2"><p>您觉得扫描完成后，点击右上角的上传按钮，开始执行上传。</p>
+
+<blockquote>
+  <p>Tips: 如果没有网络，则本次扫描的结果暂存至本地，待有网络连接后到《盘点上传》功能进入，重新上传。</p>
+</blockquote></li>
+</ol>
+
+
+
+<h3 id="盘点扫描界面rfid发射器需设备支持">盘点扫描界面（RFID发射器，需设备支持）</h3>
+
+
+
+<h5 id="盘点操作步骤-1">盘点操作步骤</h5>
+
+<ol><li rel="1"><p>连接上RFD2000套件后，点击界面上Switch开关按钮。</p></li>
+<li rel="2"><p>等待设备激活后，按动RFD2000的扳机，开始扫描。</p></li>
+<li rel="3"><p>您觉得扫描完成后，点击右上角的上传按钮，开始执行上传。</p>
+
+<blockquote>
+  <p>Tips: 如果没有网络，则本次扫描的结果暂存至本地，待有网络连接后到《盘点上传》功能进入，重新上传。</p>
+</blockquote></li>
+</ol>
+
+
+
+<h2 id="盘点上传">盘点上传</h2>
+
+<p>该功能查看未能成功上传，且已有本地扫描记录的盘点计划列表。</p>
+
+<p>选择一行“未完成”状态盘点计划主记录数据，进入《盘点计划》明细页面。</p>
+
+<pre class="prettyprint hljs-dark"><code class="hljs markdown"><div class="hljs-line"><span class="hljs-quote">&gt; Tips: 从列表下拉可以刷新数据！</span>
+</div></code></pre>
+
+
+
+<h3 id="盘点计划明细页面从盘点上传进入">盘点计划明细页面（从“盘点上传”进入）</h3>
+
+<p>该页面含有如下菜单功能：</p>
+
+<ul><li><p>获取更新：获取服务器上最新版本的该计划明细数据。 <br>
+若您的数据版本过旧，则需要点击此处</p></li>
+<li><p>重新上传：本地已扫描但未能成功上传的数据，进行重新上传。 <br>
+这里不进入盘点扫描界面，直接上传。</p></li>
+</ul>
+
+
+
+<h2 id="使用说明">使用说明</h2>
+
+<p>不懂请看这里！</p>
+
+<pre class="prettyprint hljs-dark"><code class="hljs markdown"><div class="hljs-line"><span class="hljs-quote">&gt; Tips: 默认版本为离线版，点击右上角菜单选项后，切换至在线版。</span>
+</div></code></pre>
+
+
+
+<h2 id="关于软件">关于软件</h2>
+
+<p>如有问题，请根据此页面说事，谢谢合作！</p>
+
+<hr>
+
+<p>**Copyright © 2019 by Niko Studio. <br> <br>
+All rights reserved.**</p></div></body></html>
